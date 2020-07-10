@@ -5,7 +5,6 @@
   padding: 0;
   margin: 0;
   max-width: 100%;
-  border: 1px solid grey;
 }
 body{
     background-color: lemonchiffon;
@@ -21,9 +20,7 @@ h6{
     flex-direction: row;
     justify-content: space-between;
 }
-a{
-    justify-content: space-evenly;
-}
+
 .links{
     display: flex;
     flex-direction: row-reverse;
@@ -42,6 +39,8 @@ h1, h3{
 }
 h4{
     text-align: justify;
+    text-align: center;
+    margin-bottom: 20%;
 }
 #images{
     display: flex;
@@ -51,4 +50,8 @@ h4{
 .Front{
     display: flex;
     flex-direction: column;
+}
+footer{
+    background-color: lightsalmon;
+    
 }
