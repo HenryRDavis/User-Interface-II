@@ -12,18 +12,31 @@ body{
 h6{
     font-size: 2rem;
 }
-  nav a:hover {
-    color: #afeeee;
+nav a button:hover {
+    color: yellow;
   }
 .images{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
-
+.images section {
+    width: 28%;
+    padding:2%;
+    text-align: center;
+}
+button{
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5%;
+  padding: 13px 30px;
+  text-align: center;
+  font-size: 1rem;
+  cursor: pointer;
+}
 .links{
     display: flex;
-    flex-direction: row-reverse;
+    justify-content: flex-end;
     
 }
 h1, h3{
@@ -37,21 +50,60 @@ h1, h3{
     margin-bottom: 10%;
     font-size: 3rem;
 }
-h4{
+p{
     text-align: justify;
     text-align: center;
     margin-bottom: 20%;
-}
-#images{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 }
 .Front{
     display: flex;
     flex-direction: column;
 }
 footer{
+    font-size: 2rem;
+    text-align: center;
     background-color: lightsalmon;
     
+}
+/* Media Queries */
+@media(max-width: 800px){
+    a {
+        margin: 0 4%;
+        padding: 4% 0;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2% 0;
+    }
+    .links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width: 500px){
+.images section{
+width: 50%;
+}
+h6 {
+    text-align: center;
+}
+a {
+    margin: 0 4%;
+    padding: 4% 0;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2% 0;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 }
